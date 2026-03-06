@@ -129,16 +129,14 @@ ________________________________________
 ________________________________________
 
 ## 🏗️ Architecture Diagram
-
+  
 <p align="center">
-  docs/architecture.svg
+  <img src="docs/architecture.svg" alt="Architecture Diagram" width="880" />
 </p>
-
 
 🧑‍💻 Author
 Mukta Raut
 Senior Technical Content Developer & AI Engineer
-•	Strong in FastAPI, Prompt Engineering, GenAI, and Technical Documentation.
 ________________________________________
 📄 License
 MIT License – free to modify and use.
