@@ -1,0 +1,77 @@
+
+<svg width="880" height="500" viewBox="0 0 880 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0b0f17"/>
+
+  <!-- Styles -->
+  <style>
+    .box { fill:#121826; stroke:#2ea043; stroke-width:1.5; rx:10; ry:10; }
+    .text { fill:#e6edf3; font-family:Segoe UI, Roboto, sans-serif; font-size:16px; }
+    .title { fill:#9fb3c8; font-size:18px; font-weight:600; }
+    .arrow { stroke:#9fb3c8; stroke-width:2; marker-end:url(#arrowhead); }
+    .tag { fill:#0f1522; stroke:#223; stroke-width:1; rx:6; ry:6; }
+    .tagText { fill:#c9d7e3; font-family:Segoe UI, Roboto, sans-serif; font-size:13px; }
+  </style>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#9fb3c8"/>
+    </marker>
+  </defs>
+
+  <!-- Frontend Box -->
+  <rect x="60" y="180" width="250" height="160" class="box"/>
+  <text x="80" y="215" class="title">Frontend (Client)</text>
+  <text x="80" y="245" class="text">• HTML</text>
+  <text x="80" y="270" class="text">• CSS</text>
+  <text x="80" y="295" class="text">• JavaScript (Fetch API)</text>
+  <text x="80" y="320" class="text">• Chat UI + Interaction Logic</text>
+
+  <!-- Backend Box -->
+  <rect x="330" y="90" width="250" height="320" class="box"/>
+  <text x="350" y="125" class="title">Backend (FastAPI)</text>
+  <text x="350" y="155" class="text">• /api/chat (POST)</text>
+  <text x="350" y="180" class="text">• /api/config (GET)</text>
+  <text x="350" y="205" class="text">• /api/health (GET)</text>
+  <text x="350" y="235" class="text">• Pydantic validation</text>
+  <text x="350" y="260" class="text">• In-memory session context</text>
+  <text x="350" y="285" class="text">• Prompt builder</text>
+  <text x="350" y="310" class="text">• Rate-limit + Logging</text>
+  <text x="350" y="340" class="text">• Returns cleaned AI response</text>
+
+  <!-- OpenAI Box -->
+  <rect x="600" y="180" width="250" height="160" class="box"/>
+  <text x="620" y="215" class="title">OpenAI API</text>
+  <text x="620" y="245" class="text">• Model: gpt-4o-mini</text>
+  <text x="620" y="270" class="text">• Generates rewritten content</text>
+  <text x="620" y="295" class="text">• Controlled by backend prompts</text>
+
+  <!-- Arrows (center-aligned between boxes) -->
+  <!-- Frontend -> Backend -->
+  <line x1="310" y1="240" x2="330" y2="240" class="arrow" />
+  <!-- Backend -> Frontend -->
+  <line x1="330" y1="320" x2="310" y2="320" class="arrow" />
+  <!-- Backend -> OpenAI -->
+  <line x1="580" y1="240" x2="600" y2="240" class="arrow" />
+  <!-- OpenAI -> Backend -->
+  <line x1="600" y1="320" x2="580" y2="320" class="arrow" />
+
+  <!-- Non-overlapping arrow labels as tags -->
+  <!-- Label: Fetch API (Frontend -> Backend) -->
+  <rect x="225" y="205" width="110" height="26" class="tag"/>
+  <text x="235" y="223" class="tagText">Fetch API</text>
+
+  <!-- Label: JSON request (Backend -> OpenAI) -->
+  <rect x="590" y="145" width="130" height="26" class="tag"/>
+  <text x="600" y="163" class="tagText">JSON request</text>
+
+  <!-- Label: JSON response (Backend -> Frontend) -->
+  <rect x="175" y="342" width="140" height="26" class="tag"/>
+  <text x="185" y="360" class="tagText">JSON response</text>
+
+  <!-- Label: AI reply (OpenAI -> Backend) -->
+  <rect x="640" y="342" width="90" height="26" class="tag"/>
+  <text x="650" y="360" class="tagText">AI reply</text>
+</svg>
