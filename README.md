@@ -131,7 +131,7 @@ ________________________________________
 ## 🏗️ Architecture Diagram
   
 <p align="center">
-  <img src="docs/architecture.svg" alt="Architecture Diagram" width="880" />
+  <img src="https://github.com/muktaraut12/SalesRepAssistant_App/blob/main/architecture.svg" alt="Architecture Diagram" width="880" />
 </p>
 
 🧑‍💻 Author
