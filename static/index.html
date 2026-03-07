@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Assist - AI Chat</title>
+  <!-- Avoid favicon 404 in logs -->
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <section class="chat-window">
+      <h2>Sales Assist - Chat</h2>
+      <div id="messages" class="messages"></div>
+    </section>
+
+    <section class="input-panel">
+      <label>Product Notes</label>
+      <textarea id="userInput" placeholder="Enter product notes..." rows="8"></textarea>
+
+      <label>Select Tone</label>
+      <select id="tone">
+        <option value="concise">Concise</option>
+        <option value="friendly">Friendly</option>
+        <option value="technical">Technical</option>
+      </select>
+
+      <button id="sendBtn">Send</button>
+
+      <!-- Keep exactly one of each -->
+      <div id="loading" class="loading hidden">Thinking...</div>
+      <div id="error" class="error hidden"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
